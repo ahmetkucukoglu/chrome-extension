@@ -1,0 +1,1 @@
+var data = data || { currentNetwork: null, currentOrderId: null, networks: {} };

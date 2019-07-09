@@ -1,0 +1,30 @@
+{
+  "name": "Google Ad Manager",
+  "description": "Google Ad Manager extension",
+  "author": "Ahmet KÜÇÜKOĞLU",
+  "version": "1",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_title": "Google Ad Manager extension",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://admanager.google.com/*",
+        "https://admanager.google.com/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
